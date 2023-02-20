@@ -1,0 +1,117 @@
+/* All commen style */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1,h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 75px;
+    text-align: center;
+    color: rgb(211, 175, 83);
+}
+
+h3{
+    font-size: 35px; 
+}
+
+span{
+    color :white;
+}
+
+/* about section */
+.about
+{
+    margin: 60px;
+}
+.about p{
+    margin-top: 20px;
+}
+
+/* Image section */
+.image{
+    background-image: url('wall.jpg');
+    
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+
+/* Github section */
+.git{
+    
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.git a{
+    text-decoration: none;
+    color: rgb(0, 255, 0);;
+}
+
+.git a:hover{
+    font-size: 22px;
+    color: yellow;
+}
+
+/* programming section */
+.pro{   
+    margin: 20px;
+    padding :0px 50px;
+    
+}
+.pro ul li{
+    cursor: pointer;
+    list-style: none;
+}
+
+.pro ul li:hover{
+    color:rgb(0, 255, 0);
+}
+
+/* Table Section */
+
+table{
+    margin: 20px auto;
+    height: 200px;
+    width: 700px;
+}
+
+td span{
+    color: rgb(211, 175, 83);
+    font-size: 22px;
+    font-weight: bolder ;
+}
+
+/* Form section */
+
+form{
+    margin: 30px;
+}
+
+label{
+    font-size: 20px;
+    width: 50px;
+    color: rgb(211, 175, 83);
+    padding: 40px;
+} 
+ 
+input{
+    margin: 5px;
+    padding :  2px;
+    font-size: 22px;
+    border : 1px solid transparent;
+    border-radius: 4px solid transparent;
+}
+
+#submit{
+    width: 130px;
+    border-radius: 2px;
+}

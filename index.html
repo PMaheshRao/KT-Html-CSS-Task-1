@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html CSS assignment</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Heading -->
+    
+    <h1>I am <span> Mahesh </span></h1>
+   
+    
+    <!-- Paragrapgh about me -->
+    <div class="about" id="about">
+        <h3> <u> About <span> me</span> </u></h3>
+        <p>I live in Jharkhand, India. Currently I am pursuing B. Tech. From RVS College Of Engineering & Technology, Jamshedpur in specialization Computer Science Engineering.I am passionate about coding, technology, and love creating ambitious projects with positive people. </p>
+        <p>I like to spend my time learning new skills. I have few hobbies like playing Basketball, playing Chess, watching Anime and learning about new Technology. I have some good qualities like , I am Well-organised , hardworking , problem solver , development enthusiast kind of person. </p>
+            
+    </div>
+    
+    
+    
+    <!-- Nature Image  -->
+    <h3><u> Nature <span> Image </span></u></h3>
+    <br>
+    <div class="image" id="image"></div>
+    
+    
+    
+
+    <!-- Github Link -->
+    <div class="git" id="git">
+        <b>Github Link : <a href="https://github.com/PMaheshRao" title="Github PMaheshRao" >Click me !!!</a></b>
+    </div>
+    
+    
+    <!-- Programming language that I know -->
+    <div class="pro" id="pro">
+    <h3><u><span>Programming Language </span>I Know</u></h3>
+    
+    <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Jave</li>
+        <li>Html</li>
+        <li>Css</li>
+    </ul>
+
+    </div>
+    
+    
+    <!-- Table with personal data -->
+    
+    <h3><u> Data <span> Table </span></u></h3>
+    <table border="2px">
+        <thead>
+            <td> <span> Name </span></td>
+            <td> <span> Place </td>
+            <td> <span> Age </span></td>
+            <td> <span> college </span></td>
+            <td> <span> Department </span></td>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Mahesh </td>
+                <td> Jamshedpur </td>
+                <td> 21 </td>
+                <td> RVSCET, Jsr </td>
+                <td> CSE </td>
+            </tr>
+            <tr>
+                <td> Mahesh </td>
+                <td> Jamshedpur </td>
+                <td> 21 </td>
+                <td> RVSCET, Jsr </td>
+                <td> CSE </td>
+            </tr><tr>
+                <td> Mahesh </td>
+                <td> Jamshedpur </td>
+                <td> 21 </td>
+                <td> RVSCET, Jsr </td>
+                <td> CSE </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    
+    <br><br>
+
+    <!-- Form tag use-->
+    
+    <h3><u> Form <span>Information </span></u></h3>
+    
+    <form id="form">
+        
+        <label for="firstName">First Name : </label>
+        <input type="text" id="firstName">
+        <br><br>
+        
+        <label for="lastName">Last Name : </label>
+        <input type="text" id="lastName">
+        <br><br>
+
+        <label for="phone">Phone No.: </label>
+        <input type="number" id="phone">
+        <br><br>
+                
+        <label for="mailId">Mail id : </label>
+        <input type="email" id="mailId">
+        <br><br>
+                
+        <label for="State">State : </label>
+        <input type="text" id="State">
+        <br><br>
+                
+        <input type="submit" id="submit">
+    </form>
+<br>
+<hr>
+
+<!-- Js for showing detail in another page -->
+
+<script>
+    const form = document.getElementById('form'); 
+    const firstname = document.getElementById('firstName');
+    const lastname = document.getElementById('lastName');
+    const Phone = document.getElementById('phone'); 
+    const MailId = document.getElementById('mailId');
+    const state = document.getElementById('State');
+
+    form.addEventListener('submit',function(d){
+        d.preventDefault(); //restrict from pre submission
+
+        const firstnamevalue = firstname.value;
+        const lastnamevalue = lastname.value;
+        const PhoneNumber = Phone.value;
+        const MailIdvalue = MailId.value;
+        const Statevalue = state.value;
+
+        //store data in locastorage
+        window.localStorage.setItem('first-name',firstnamevalue);
+        window.localStorage.setItem('last-name',lastnamevalue);
+        window.localStorage.setItem('Phone-Number',PhoneNumber);
+        window.localStorage.setItem('Mail-Id',MailIdvalue);
+        window.localStorage.setItem('State-val',Statevalue);
+
+        //Calling next page
+        window.location.href = "display.html";
+         
+    })
+</script>
+
+
+</body>
+</html>
